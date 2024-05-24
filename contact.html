@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- レスポンシブ対応 -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSS -->
+    <link rel="stylesheet" href="css/style.css"><!-- CSS -->
+    <title>Shiho's Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="site-title">Shiho's Portfolio</h1>
+        <nav id="navi">
+            <ul>
+                <li><a href="index.html">Top</a></li>
+                <li><a href="index.html#service">Service</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form" class="wrapper">
+            <h2 class="sec-title-en">Contact</h2>
+            <h2 class="sec-title-ja">お問い合わせ</h2>
+            <!-- ここにcontact-form -->
+            <form action="" method="post">
+                <div class="item">
+                    <label for="name"><span>必須</span>お名前</label>
+                    <br>
+                    <input type="text" name="name" id="name" autofocus required>
+                </div>
+                <div class="item">
+                    <label for="address"><span>必須</span>メールアドレス</label>
+                    <br>
+                    <input type="email" name="address" id="address" required>
+                </div>
+                <div class="item">
+                    <label for="message"><span>必須</span>お問い合わせ内容</label>
+                    <br>
+                    <textarea name="message" id="message" cols="15" rows="8" required></textarea>
+                </div>
+                <div><input type="submit" value="送信" class="submit"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer-contact">
+        <p>&copy; Shiho's Portfolio</p>
+    </footer>
+</body>
+</html>

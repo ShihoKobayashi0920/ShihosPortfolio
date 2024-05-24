@@ -1,0 +1,253 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  color: black;
+  background-color: antiquewhite;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*---------- h1 tag ----------*/
+.site-title {
+  color: violet;
+  /* padding-left: 0; */
+}
+.site-title a {
+  display: block;
+}
+
+/*---------- h2 tag ----------*/
+.sec-title-en {
+  color: orange;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.sec-title-ja {
+  color: pink;
+  font-size: 15px;
+  margin: 0 auto 20px auto;
+}
+
+/*---------- h3 tag ----------*/
+.content-title {
+  font-size: 20px;
+  margin: 0 auto 5px auto;
+}
+
+.grid-title {
+  color: gray;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+/*---------- setting ----------*/
+.wrapper {
+  max-width: 70%;
+  margin: 25px auto;
+  padding: 100px 30px 15px 30px;
+  text-align: center;
+}
+
+.item {
+  padding: 15px;
+  margin: 0 5px 5px 5px;
+  border: 3px dotted white;
+}
+
+/*---------- header ----------*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  /* 影 */
+  box-shadow: 0px 3px 10px 2px snow;
+}
+.header ul {
+  display: flex;
+}
+.header ul li {
+  margin-left: 30px;
+}
+.header ul li a {
+  color: black;
+}
+.header ul li a :hover {
+  opacity: 0.7;
+}
+
+/*---------- mainvisual ----------*/
+#mainvisual {
+  /* 上固定はここを調整する */
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#mainvisual img {
+  max-width: 50%;
+}
+
+/*---------- service ----------*/
+#service .content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#service .content .item {
+  /* margin,paddingは上で一括設定 */
+  align-items: center;
+  text-align: center;
+}
+#service .content .item img {
+  width: 130px;
+  height: 130px;
+}
+#service .content .item p {
+  text-align: left;
+}
+
+/*---------- works ----------*/
+#works .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* グリッドの余白 */
+  gap: 25px;
+}
+#works .grid .item {
+  /* margin,paddingは上で一括設定 */
+  /* margin ≒ gap */
+  margin: 0;
+}
+#works .grid .item img {
+  width: 200px;
+  height: 110px;
+}
+
+/*---------- about ----------*/
+#about .content {
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#about .text {
+  text-align: left;
+}
+
+/*---------- contact-form(contact.html) ----------*/
+#contact-form {
+  max-width: 600px;
+}
+#contact-form .sec-title-ja {
+  margin-bottom: 0;
+}
+#contact-form .item {
+  text-align: left;
+  border: none;
+}
+#contact-form .item label span {
+  text-align: center;
+  margin-right: 5px;
+  padding: 2px 5px;
+  color: white;
+  border-radius: 6px;
+  background-color: lightgreen;
+  border: 1px solid lightgray;
+}
+#contact-form .item input, #contact-form .item textarea {
+  width: 99%;
+  font-size: 25px;
+  margin-top: 10px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+#contact-form .submit {
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+/*---------- footer ----------*/
+.footer {
+  /* 下固定はここを調整する */
+  margin-bottom: 150px;
+  /*---------- contact(footer) ----------*/
+}
+.footer p {
+  text-align: center;
+}
+.footer #contact {
+  text-align: center;
+  align-items: center; /* かかってない */
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: white;
+  cursor: pointer;
+}
+.footer #contact .sec-title-en {
+  margin-top: 20px;
+}
+
+#footer-contact {
+  margin-bottom: 30px;
+}
+
+/*---------- responsive design ----------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    max-width: 90%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  #works .grid .item {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  #about .content {
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  #about img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  #about .text {
+    max-width: 95%;
+  }
+}/*# sourceMappingURL=style.css.map */
